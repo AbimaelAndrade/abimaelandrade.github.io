@@ -67,7 +67,7 @@ h1:hover {
     display: none;
 }
 
-#social li a:hover ~ .info {
+#social li a:hover ~ .info, #social li a:active ~ .info, #social li a:focus ~ .info {
     display: block;
     position: absolute;
     bottom: -75px;
