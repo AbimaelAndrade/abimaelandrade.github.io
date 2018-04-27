@@ -1,70 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Abimael Andrade</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Abimael Andrade</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>Abimael Andrade</h1>
-    <span id="social">
-        <ul>
-            <li>
-                <a href="https://www.linkedin.com/in/abimaelandrade/" target="_blank" >
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <span class="info">
-                    Linkedin
-                </span>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/abimaelc.andrade" target="_blank" >
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <span class="info">
-                    Facebook
-                </span>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/abymaelll/" target="_blank" >
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <span class="info">
-                    Instagram
-                </span>
-            </li>
-            <li>
-                <a href="tel:99984186530" target="_blank" >
-                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                </a>
-                <span class="info">
-                   Whatsapp
-                </span>
-            </li>
-            <li>
-                <a href="https://codepen.io/abimaelandrade/" target="_blank" >
-                    <i class="fa fa-codepen" aria-hidden="true"></i>
-                </a>
-                <span class="info">
-                    Codepen
-                </span>
-            </li>
-            <li>
-                <a href="mailto:abimaelc.andrade@gmail.com" target="_blank" >
-                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                </a>
-                <span class="info">
-                    E-mail
-                </span>
-            </li>
-        </ul>
-    </span>
 
+<body class="wallpaper">
+    <div class="container">
+        <div class="box-left">
+            <h1 class="name">Hi, I'm Abimael Andrade</h1>
+            <h2 class="job">Web Developer</h2>
+            <p class="description">
+                Hey, I'm a web developer from Imperatriz, Brazil.
+                <br> I can help you build your next project.
+            </p>
+
+            <a href="mailto:abimaelc.andrade@gmail.com" class="button" target="_top">Entre em contato</a>
+
+            <ul>
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=5599984186530" target="_black">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://codepen.io/abimaelandrade/" target="_black">
+                        <i class="fa fa-codepen" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/abimaelandrade" target="_black">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/abimaelandrade/" target="_black">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="box-right">
+            <img src="img/perfil.png" alt="Abimael Andrade" class="profile-image">
+        </div>
+    </div>
+    <script>
+        function typeWrite(element) {
+            const textArray = element.innerHTML.split('')
+            console.log(textArray);
+
+            element.innerHTML = ''
+
+            textArray.forEach((letra, i) => {
+                setTimeout(() => element.innerHTML += letra, 100 * i);
+            })
+        }
+
+        const titulo = document.querySelector('.name')
+        typeWrite(titulo)
+    </script>
 </body>
+
 </html>
